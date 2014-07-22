@@ -1,0 +1,29 @@
+{
+  "name": "connect-monorouter",
+  "version": "0.0.0",
+  "description": "Connect middleware for using monorouter on the server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewwithanm/connect-monorouter.git"
+  },
+  "keywords": [
+    "react",
+    "monorouter",
+    "connect",
+    "router"
+  ],
+  "author": "Matthew Dapena-Tretter <m@tthewwithanm.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewwithanm/connect-monorouter/issues"
+  },
+  "homepage": "https://github.com/matthewwithanm/connect-monorouter",
+  "dependencies": {
+    "react": "*",
+    "urllite": "~0.4.2"
+  }
+}
