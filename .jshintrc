@@ -1,0 +1,13 @@
+{
+  "globalstrict": true,
+  "browser": true,
+  "node": true,
+  "es3": true,
+  "indent": 2,
+  "eqnull": true,
+  "strict": false,
+  "loopfunc": true,
+  "globals": {
+    "ActiveXObject": true
+  }
+}
