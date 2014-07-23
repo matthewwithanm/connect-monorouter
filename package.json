@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/matthewwithanm/connect-monorouter",
   "dependencies": {
-    "react": "*",
     "urllite": "~0.4.2"
   }
 }
