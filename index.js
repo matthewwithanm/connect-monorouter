@@ -20,7 +20,7 @@ var connectMiddleware = function(Router) {
 
       var contentType = rres.contentType(); // Guess from contentType if not present
 
-      res.statusCode = rres._notFound ? 404 : 200;
+      res.statusCode = rres.status;
       res.setHeader('Content-Type', contentType);
       res.end(rres.renderDocumentToString());
     });
