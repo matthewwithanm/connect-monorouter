@@ -18,10 +18,8 @@ var connectMiddleware = function(Router) {
         return next(err);
       }
 
-      var contentType = rres.contentType(); // Guess from contentType if not present
-
       res.statusCode = rres.status;
-      res.setHeader('Content-Type', contentType);
+      res.setHeader('Content-Type', rres.contentType);
       res.end(rres.renderDocumentToString());
     });
   };
