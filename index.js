@@ -18,9 +18,17 @@ var connectMiddleware = function(Router) {
         return next(err);
       }
 
+      var rendered;
+
+      try {
+        rendered = rres.renderDocumentToString();
+      } catch (err) {
+        return next(err);
+      }
+
       res.statusCode = rres.status;
       res.setHeader('Content-Type', rres.contentType);
-      res.end(rres.renderDocumentToString());
+      res.end(rendered);
     });
   };
 };
