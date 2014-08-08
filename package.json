@@ -1,6 +1,6 @@
 {
   "name": "connect-monorouter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Connect middleware for using monorouter on the server",
   "main": "index.js",
   "scripts": {
