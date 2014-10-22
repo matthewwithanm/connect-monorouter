@@ -3,7 +3,7 @@ var connectMiddleware = function(Router) {
     var url = req.protocol + '://' + req.get('host') + req.originalUrl;
 
     // TODO: Allow this to be mounted at a different base and strip that from pathname
-    new Router().dispatch(url, {initialOnly: true}, function(err, rres) {
+    new Router().dispatch(url, {cause: 'httprequest', initialOnly: true}, function(err, rres) {
       if (err) {
         // The router doesn't want to handle it. That's okay, let something
         // else.
